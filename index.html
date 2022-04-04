@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>form</title>
+</head>
+
+<body>
+    <section class="survey">
+        <header class="header-form-box">
+            <h2>나와 잘 맞는 회사는?</h2>
+            <p class="form-box__title">가고 싶은 회사에 대한 호감도를 조사합니다. 아이고 의미 없다.</p>
+        </header>
+        <form action="" method="post">
+            <fieldset class="form-box">
+                <legend class="hidden">마음에 드는 회사</legend>
+                <p class="form-box__title">다음 문자중에 왠지 마음에 드는 것을 하나 고르세요</p>
+                <div>
+                    <input type="radio" name="company" id="naver" required>
+                    <label for="naver">네</label>
+                </div>
+                <div>
+                    <input type="radio" name="company" id="kakao">
+                    <label for="kakao">카</label>
+                </div>
+                <div>
+                    <input type="radio" name="company" id="line">
+                    <label for="line">라</label>
+                </div>
+                <div>
+                    <input type="radio" name="company" id="coupang">
+                    <label for="coupang">쿠</label>
+                </div>
+                <div>
+                    <input type="radio" name="company" id="jejucoding">
+                    <label for="jejucoding">베</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-box">
+                <legend class="hidden">자주쓰는 메신저 고르기</legend>
+                <p class="form-box__title">친구와 문자를 합니다. 다음 중 어떤 메신저를 이용하시겠습니까? 모두 골라주세요.</p>
+                <div>
+                    <input id="messenger-kakao" name="messenger" type="checkbox">
+                    <label for="messenger-kakao">카카오톡</label>
+                </div>
+                <div>
+                    <input id="messenger-line" name="messenger" type="checkbox">
+                    <label for="messenger-line">라인</label>
+                </div>
+                <div>
+                    <input id="messenger-ins" name="messenger" type="checkbox">
+                    <label for="messenger-ins">인스타그램 디엠</label>
+                </div>
+                <div>
+                    <input id="messenger-nate" name="messenger" type="checkbox">
+                    <label for="messenger-nate">네이트온</label>
+                </div>
+                <div>
+                    <input id="messenger-buddy" name="messenger" type="checkbox">
+                    <label for="messenger-buddy">버디버디</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-box">
+                <legend class="hidden">면접에서 포부 한 문장으로 말하기</legend>
+                <p class="form-box__title">면접에서 자신의 포부를 한 문장으로 얘기한다면?</p>
+                <input type="text" placeholder="내 답변" required>
+            </fieldset>
+
+            <fieldset class="form-box">
+                <legend class="hidden">곧 최종면접이다. 면접 직전, 자기 자신에게 해주고 싶은 말</legend>
+                <p class="form-box__title">당신은 지금 한 기업의 최종면접을 앞두고 있습니다. 면접장에 들어가기 직전, 자기 자신에게 해주고 싶은말은?</p>
+                <input type="textarea" placeholder="내 답변" required>
+            </fieldset>
+
+            <fieldset class="form-box">
+                <legend class="hidden">기술 면접때 듣고 싶은 질문이 아닌 것 고르기</legend>
+                <p class="form-box__title">다음 중 기술 면접때 듣고 싶은 질문이 아닌 것은?</p>
+                <select name="select" class="select">
+                    <option value="">선택</option>
+                    <option value="1">입사후 포부를 말해보세요.</option>
+                    <option value="2">선택</option>
+                    <option value="3">선택</option>
+                </select>
+            </fieldset>
+
+            <fieldset class="form-box">
+                <legend class="hidden">취업을 희망하는 날짜 선택</legend>
+                <p class="form-box__title">취업을 희망하는 날짜를 선택해주세요.</p>
+                <span class="date-time__text">날짜</span>
+                <input type="date" class="input-date">
+            </fieldset>
+
+            <fieldset class="form-box">
+                <legend class="hidden">업무를 시작 하기에 가장 적당한 시간 고르기</legend>
+                <p class="form-box__title">업무를 시작 하기에 가장 적당한 시간을 고르세요.</p>
+                <span class="date-time__text">시간</span>
+                <input type="time" value="00:00" class="input-time">
+            </fieldset>
+            <div class="wrapper">
+                <button class="submit__btn" type="submit">제출</button>
+                <button class="reset__btn" type="reset">양식 지우기</button>
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>

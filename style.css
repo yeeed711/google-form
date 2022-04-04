@@ -1,0 +1,101 @@
+/* CSS 초기화 */
+body,
+p,
+input,
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+body {
+  background-color: #f0ebf8;
+}
+
+input {
+  margin-bottom: 15px;
+  margin-right: 5px;
+}
+
+.survey {
+  width: 700px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header-form-box::after {
+  content: "";
+  width: 700px;
+  height: 15px;
+  background-color: #693ab8;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.header-form-box,
+.form-box {
+  background-color: #fff;
+  border: 1px solid rgb(223, 223, 223);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 15px 0;
+}
+
+.form-box__title {
+  margin-bottom: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+input[type="text"],
+input[type="textarea"] {
+  width: 100%;
+  border-bottom: 1px solid rgb(223, 223, 223);
+  padding: 5px 0;
+}
+
+input[type="text"] {
+  width: 50%;
+}
+
+.select {
+  border-color: rgb(223, 223, 223);
+  padding: 10px;
+  color: #999;
+}
+
+.input-date,
+.input-time {
+  border-bottom: 1px solid rgb(223, 223, 223);
+  padding: 5px 0;
+}
+
+.date-time__text {
+  display: block;
+  color: #999;
+  font-size: 13px;
+  padding: 10px 0;
+}
+
+.submit__btn {
+  background-color: #693ab8;
+  color: #fff;
+  width: 65px;
+  height: 30px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.reset__btn {
+  color: #693ab8;
+  cursor: pointer;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
